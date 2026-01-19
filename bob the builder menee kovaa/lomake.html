@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>pewi</title>
+</head>
+<body>
+    <button onclick="moveImage()">reel in</button>
+    <button onclick="getOut()">GET OUT</button>
+
+    <div id="vene">
+        <img class="bob" id="kelanakasvatti" src="venemuttaleikattu.png" alt="">
+        <img class="bob" id="ahaven" src="ahaven.jpg" alt="">
+        <img class="bob" id="onki" src="onkivissiinjust.jpg" alt="">
+        
+    </div>
+    <script>
+let moved = false;
+
+function moveImage() {
+    const img = document.getElementById("ahaven");
+
+    if (!moved) {
+        img.style.transform = "translateX(-300px)";
+    } else {
+        img.style.transform = "translateX(0)";
+    }
+
+    moved = !moved;
+}
+</script>
+<script>
+function getOut() {
+    document.body.innerHTML += `
+        <h1 style="text-align:center; margin-top:40vh;">
+            Game Over
+        </h1>
+    `;
+}
+</script>
+</body>
+</html>
