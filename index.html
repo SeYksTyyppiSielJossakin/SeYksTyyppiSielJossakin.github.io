@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    
     <title>pewi</title>
 </head>
 <body>
@@ -31,7 +32,7 @@
         <img class="bob" id="onki" src="onkivissiinjust.jpg" alt="">
         
     </div>
-    <script>
+<script>
 let moved = false;
 
 function moveImage() {
@@ -45,7 +46,16 @@ function moveImage() {
 
     moved = !moved;
 }
+
+
+
+
 </script>
+<script src="storage.js"></script>
+
+
+<!--
+
 <script>
 function getOut() {
     document.body.innerHTML += `
@@ -61,7 +71,7 @@ let inventory = JSON.parse(localStorage.getItem("inventory")) || {
     coins: 0,
     fish: 0,
     junk: 0
-};
+}
 
 // Update numbers on screen
 function updateUI() {
@@ -103,6 +113,13 @@ function resetInventory() {
 // Load UI when page opens
 updateUI();
 </script>
+
+-->
+
+
+
+
+
 
 </body>
 </html>
